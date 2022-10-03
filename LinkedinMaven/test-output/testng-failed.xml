@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="tests.VerifyContactsPage">
+        <methods>
+          <include name="verifyContactsLink"/>
+          <include name="verifyHashtagLink"/>
+          <include name="openMyNetworkPage"/>
+          <include name="verifyEventsLink"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="clearPOMClassObjects"/>
+          <include name="logOutToApp"/>
+          <include name="createPOMClassObjects"/>
+        </methods>
+      </class> <!-- tests.VerifyContactsPage -->
+      <class name="tests.VerifyConnectionPage">
+        <methods>
+          <include name="createPOMClassObjects"/>
+          <include name="verifyGroupsLink"/>
+          <include name="logOutToApp"/>
+          <include name="openBrowser"/>
+          <include name="clearPOMClassObjects"/>
+          <include name="openMyNetworkPage"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifyConnectionPage -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="tests.VerifyContactsPage">
+        <methods>
+          <include name="verifyContactsLink"/>
+          <include name="verifyHashtagLink"/>
+          <include name="openMyNetworkPage"/>
+          <include name="verifyEventsLink"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="clearPOMClassObjects"/>
+          <include name="logOutToApp"/>
+          <include name="createPOMClassObjects"/>
+        </methods>
+      </class> <!-- tests.VerifyContactsPage -->
+      <class name="tests.VerifyConnectionPage">
+        <methods>
+          <include name="createPOMClassObjects"/>
+          <include name="logOutToApp"/>
+          <include name="openBrowser"/>
+          <include name="verifyConnectionsLink"/>
+          <include name="clearPOMClassObjects"/>
+          <include name="openMyNetworkPage"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.VerifyConnectionPage -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
