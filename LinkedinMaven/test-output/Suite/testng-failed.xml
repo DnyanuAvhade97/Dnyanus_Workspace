@@ -9,7 +9,6 @@
     <classes>
       <class name="tests.VerifyContactsPage">
         <methods>
-          <include name="verifyContactsLink"/>
           <include name="verifyHashtagLink"/>
           <include name="openMyNetworkPage"/>
           <include name="verifyEventsLink"/>
@@ -20,17 +19,6 @@
           <include name="createPOMClassObjects"/>
         </methods>
       </class> <!-- tests.VerifyContactsPage -->
-      <class name="tests.VerifyConnectionPage">
-        <methods>
-          <include name="createPOMClassObjects"/>
-          <include name="verifyGroupsLink"/>
-          <include name="logOutToApp"/>
-          <include name="openBrowser"/>
-          <include name="clearPOMClassObjects"/>
-          <include name="openMyNetworkPage"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- tests.VerifyConnectionPage -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
   <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
@@ -52,6 +40,7 @@
       <class name="tests.VerifyConnectionPage">
         <methods>
           <include name="createPOMClassObjects"/>
+          <include name="verifyGroupsLink"/>
           <include name="logOutToApp"/>
           <include name="openBrowser"/>
           <include name="verifyConnectionsLink"/>
