@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\ABC\eclipse-workspace\LinkedinMaven\testng.xml</span>
+                    <span>C:\Users\ABC\git\Dnyanus_Workspace\LinkedinMaven\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 3 failed,  5 skipped,  2 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,  6 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,17 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyConnectionPage" class="method navigator-link" hash-for-method="verifyConnectionsLink">verifyConnectionsLink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyContactsPage" class="method navigator-link" hash-for-method="verifyContactsLink">verifyContactsLink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyConnectionPage" class="method navigator-link" hash-for-method="verifyGroupsLink">verifyGroupsLink</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.VerifyContactsPage" class="method navigator-link" hash-for-method="verifyEventsLink">verifyEventsLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -128,6 +118,11 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.VerifyConnectionPage" class="method navigator-link" hash-for-method="verifyConnectionsLink">verifyConnectionsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.VerifyContactsPage" class="method navigator-link" hash-for-method="verifyContactsLink">verifyContactsLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -138,7 +133,7 @@
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyContactsPage" class="method navigator-link" hash-for-method="verifyEventsLink">verifyEventsLink</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.VerifyConnectionPage" class="method navigator-link" hash-for-method="verifyGroupsLink">verifyGroupsLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,6 +162,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.VerifyContactsPage" class="method navigator-link" hash-for-method="verifyContactsLink">verifyContactsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.VerifyConnectionPage" class="method navigator-link" hash-for-method="verifyGroupsLink">verifyGroupsLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -190,51 +190,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyContactsLink">
-                  </a> <!-- verifyContactsLink -->
-                  <span class="method-name">verifyContactsLink</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.linkedin.com/mynetwork/import-contacts/saved-contacts/] but found [https://www.linkedin.com/mynetwork/]
-	at tests.VerifyContactsPage.verifyContactsLink(VerifyContactsPage.java:95)
+                  <a name="verifyEventsLink">
+                  </a> <!-- verifyEventsLink -->
+                  <span class="method-name">verifyEventsLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.VerifyContactsPage.verifyEventsLink(VerifyContactsPage.java:107)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.VerifyConnectionPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyConnectionsLink">
-                  </a> <!-- verifyConnectionsLink -->
-                  <span class="method-name">verifyConnectionsLink</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.linkedin.com/mynetwork/invite-connect/connections/] but found [https://www.linkedin.com/mynetwork/]
-	at tests.VerifyConnectionPage.verifyConnectionsLink(VerifyConnectionPage.java:94)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyGroupsLink">
-                  </a> <!-- verifyGroupsLink -->
-                  <span class="method-name">verifyGroupsLink</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.linkedin.com/groups/] but found [https://www.linkedin.com/mynetwork/]
-	at tests.VerifyConnectionPage.verifyGroupsLink(VerifyConnectionPage.java:105)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 16 stack frames
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -251,50 +215,13 @@
                   <a name="verifyContactsLink">
                   </a> <!-- verifyContactsLink -->
                   <span class="method-name">verifyContactsLink</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;My Network&apos;]&quot;}
-  (Session info: chrome=106.0.5249.91)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()=&apos;My Network&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-EII4P66&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ABC\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:63786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41196d9c80202c81fd3c54ad4f7abf7c
-*** Element info: {Using=xpath, value=//span[text()=&apos;My Network&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pages.HomePage.openMyNetworkPage(HomePage.java:47)
-	at tests.VerifyContactsPage.openMyNetworkPage(VerifyContactsPage.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEventsLink">
-                  </a> <!-- verifyEventsLink -->
-                  <span class="method-name">verifyEventsLink</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;My Network&apos;]&quot;}
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-EII4P66&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ABC\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:63786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41196d9c80202c81fd3c54ad4f7abf7c
+System info: host: &apos;DESKTOP-EII4P66&apos;, ip: &apos;192.168.1.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7452, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2c789ef1-241b-46b0-8e53-0af26ac2e8c6
 *** Element info: {Using=xpath, value=//span[text()=&apos;My Network&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -326,10 +253,10 @@ Session ID: 41196d9c80202c81fd3c54ad4f7abf7c
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()=&apos;My Network&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-EII4P66&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+System info: host: &apos;DESKTOP-EII4P66&apos;, ip: &apos;192.168.1.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220922151854, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18356, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 501b9d40-6660-4233-979b-b780f146809e
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7452, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2c789ef1-241b-46b0-8e53-0af26ac2e8c6
 *** Element info: {Using=xpath, value=//span[text()=&apos;My Network&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -381,6 +308,99 @@ Session ID: 501b9d40-6660-4233-979b-b780f146809e
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.VerifyConnectionPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyConnectionsLink">
+                  </a> <!-- verifyConnectionsLink -->
+                  <span class="method-name">verifyConnectionsLink</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()=&apos;My Network&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EII4P66&apos;, ip: &apos;192.168.1.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8064, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b6917eaa-1384-43c3-b550-ac8a7027d009
+*** Element info: {Using=xpath, value=//span[text()=&apos;My Network&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pages.HomePage.openMyNetworkPage(HomePage.java:47)
+	at tests.VerifyConnectionPage.openMyNetworkPage(VerifyConnectionPage.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGroupsLink">
+                  </a> <!-- verifyGroupsLink -->
+                  <span class="method-name">verifyGroupsLink</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()=&apos;My Network&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EII4P66&apos;, ip: &apos;192.168.1.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8064, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b6917eaa-1384-43c3-b550-ac8a7027d009
+*** Element info: {Using=xpath, value=//span[text()=&apos;My Network&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pages.HomePage.openMyNetworkPage(HomePage.java:47)
+	at tests.VerifyConnectionPage.openMyNetworkPage(VerifyConnectionPage.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.VerifyContactsPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactsLink">
+                  </a> <!-- verifyContactsLink -->
+                  <span class="method-name">verifyContactsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -406,7 +426,7 @@ Session ID: 501b9d40-6660-4233-979b-b780f146809e
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ABC\eclipse-workspace\LinkedinMaven\testng.xml</span>
+            <span class="header-content">C:\Users\ABC\git\Dnyanus_Workspace\LinkedinMaven\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -472,25 +492,25 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyGroupsLink')
-data.setCell(0, 2, 'tests.VerifyConnectionPage')
-data.setCell(0, 3, 6249);
+data.setCell(0, 1, 'verifyContactsLink')
+data.setCell(0, 2, 'tests.VerifyContactsPage')
+data.setCell(0, 3, 5134);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyContactsLink')
-data.setCell(1, 2, 'tests.VerifyContactsPage')
-data.setCell(1, 3, 5482);
+data.setCell(1, 1, 'verifyGroupsLink')
+data.setCell(1, 2, 'tests.VerifyConnectionPage')
+data.setCell(1, 3, 3401);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyConnectionsLink')
 data.setCell(2, 2, 'tests.VerifyConnectionPage')
-data.setCell(2, 3, 3987);
+data.setCell(2, 3, 2620);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyGroupsLink')
-data.setCell(3, 2, 'tests.VerifyConnectionPage')
-data.setCell(3, 3, 3766);
+data.setCell(3, 1, 'verifyEventsLink')
+data.setCell(3, 2, 'tests.VerifyContactsPage')
+data.setCell(3, 3, 2160);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyConnectionsLink')
-data.setCell(4, 2, 'tests.VerifyConnectionPage')
-data.setCell(4, 3, 3521);
+data.setCell(4, 1, 'verifyHashtagLink')
+data.setCell(4, 2, 'tests.VerifyContactsPage')
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyContactsLink')
 data.setCell(5, 2, 'tests.VerifyContactsPage')
@@ -500,12 +520,12 @@ data.setCell(6, 1, 'verifyEventsLink')
 data.setCell(6, 2, 'tests.VerifyContactsPage')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyHashtagLink')
-data.setCell(7, 2, 'tests.VerifyContactsPage')
+data.setCell(7, 1, 'verifyGroupsLink')
+data.setCell(7, 2, 'tests.VerifyConnectionPage')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyEventsLink')
-data.setCell(8, 2, 'tests.VerifyContactsPage')
+data.setCell(8, 1, 'verifyConnectionsLink')
+data.setCell(8, 2, 'tests.VerifyConnectionPage')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifyHashtagLink')
@@ -515,7 +535,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -551,225 +571,245 @@ return data;
               <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">2685 ms</span>
+                <span class="method-start">2779 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMClassObjects</span>
-                <span class="method-start">4515 ms</span>
-              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMClassObjects</span>
-                <span class="method-start">4535 ms</span>
+                <span class="method-start">4610 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMClassObjects</span>
+                <span class="method-start">4610 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openMyNetworkPage</span>
-                <span class="method-start">4615 ms</span>
+                <span class="method-start">4769 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">openMyNetworkPage</span>
-                <span class="method-start">4623 ms</span>
+                <span class="method-start">4769 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyContactsLink</span>
-                <span class="method-start">33967 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOutToApp</span>
-                <span class="method-start">33974 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openMyNetworkPage</span>
-                <span class="method-start">33979 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyEventsLink</span>
-                <span class="method-start">33980 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOutToApp</span>
-                <span class="method-start">33986 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyHashtagLink</span>
-                <span class="method-start">33991 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">clearPOMClassObjects</span>
-                <span class="method-start">33997 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyConnectionsLink</span>
-                <span class="method-start">54794 ms</span>
+                <span class="method-start">26694 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOutToApp([TestResult name=verifyConnectionsLink status=SUCCESS method=VerifyConnectionPage.verifyConnectionsL...)</span>
-                <span class="method-start">58321 ms</span>
+                <span class="method-start">29317 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openMyNetworkPage</span>
-                <span class="method-start">60630 ms</span>
+                <span class="method-start">31522 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyContactsLink</span>
+                <span class="method-start">33101 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutToApp([TestResult name=verifyContactsLink status=SUCCESS method=VerifyContactsPage.verifyContactsLink()[pr...)</span>
+                <span class="method-start">38237 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openMyNetworkPage</span>
+                <span class="method-start">40468 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyGroupsLink</span>
+                <span class="method-start">50759 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyGroupsLink</span>
-                <span class="method-start">77193 ms</span>
+                <span class="method-name">verifyEventsLink</span>
+                <span class="method-start">52456 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">logOutToApp([TestResult name=verifyGroupsLink status=FAILURE method=VerifyConnectionPage.verifyGroupsLink()[pri:...)</span>
-                <span class="method-start">80961 ms</span>
+                <span class="method-name">logOutToApp([TestResult name=verifyGroupsLink status=SUCCESS method=VerifyConnectionPage.verifyGroupsLink()[pri:...)</span>
+                <span class="method-start">54161 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutToApp([TestResult name=verifyEventsLink status=FAILURE method=VerifyContactsPage.verifyEventsLink()[pri:0,...)</span>
+                <span class="method-start">54618 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">clearPOMClassObjects</span>
-                <span class="method-start">84423 ms</span>
+                <span class="method-start">56309 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">84427 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">84652 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">openBrowser(Firefox)</span>
-                <span class="method-start">84927 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">openBrowser(Firefox)</span>
-                <span class="method-start">89428 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMClassObjects</span>
-                <span class="method-start">94573 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMClassObjects</span>
-                <span class="method-start">94573 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">openMyNetworkPage</span>
-                <span class="method-start">94577 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openMyNetworkPage</span>
-                <span class="method-start">94578 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyContactsLink</span>
-                <span class="method-start">126128 ms</span>
+                <span class="method-name">verifyHashtagLink</span>
+                <span class="method-start">57030 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">clearPOMClassObjects</span>
+                <span class="method-start">57036 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">57043 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">57363 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(Firefox)</span>
+                <span class="method-start">57791 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(Firefox)</span>
+                <span class="method-start">62686 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMClassObjects</span>
+                <span class="method-start">69320 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMClassObjects</span>
+                <span class="method-start">69320 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">openMyNetworkPage</span>
+                <span class="method-start">69321 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">openMyNetworkPage</span>
+                <span class="method-start">69321 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyConnectionsLink</span>
-                <span class="method-start">130547 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOutToApp([TestResult name=verifyContactsLink status=FAILURE method=VerifyContactsPage.verifyContactsLink()[pr...)</span>
-                <span class="method-start">131614 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logOutToApp([TestResult name=verifyConnectionsLink status=FAILURE method=VerifyConnectionPage.verifyConnectionsL...)</span>
-                <span class="method-start">134536 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">openMyNetworkPage</span>
-                <span class="method-start">138681 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openMyNetworkPage</span>
-                <span class="method-start">145274 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyEventsLink</span>
-                <span class="method-start">153741 ms</span>
+                <span class="method-start">99239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOutToApp</span>
-                <span class="method-start">153750 ms</span>
+                <span class="method-start">99242 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openMyNetworkPage</span>
+                <span class="method-start">99244 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGroupsLink</span>
+                <span class="method-start">99246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutToApp</span>
+                <span class="method-start">99249 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearPOMClassObjects</span>
+                <span class="method-start">99250 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyContactsLink</span>
+                <span class="method-start">188684 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutToApp</span>
+                <span class="method-start">188688 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openMyNetworkPage</span>
+                <span class="method-start">188692 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEventsLink</span>
+                <span class="method-start">188694 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutToApp</span>
+                <span class="method-start">188697 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyHashtagLink</span>
-                <span class="method-start">153760 ms</span>
+                <span class="method-start">188699 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">clearPOMClassObjects</span>
-                <span class="method-start">153764 ms</span>
+                <span class="method-start">188701 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyConnectionPage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyGroupsLink</span>
-                <span class="method-start">157042 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOutToApp([TestResult name=verifyGroupsLink status=SUCCESS method=VerifyConnectionPage.verifyGroupsLink()[pri:...)</span>
-                <span class="method-start">163292 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">clearPOMClassObjects</span>
-                <span class="method-start">176835 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">176835 ms</span>
+                <span class="method-start">188703 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyContactsPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">178996 ms</span>
+                <span class="method-start">188707 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
