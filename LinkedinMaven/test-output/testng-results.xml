@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="3" failed="1" skipped="6">
+<testng-results ignored="0" total="5" passed="0" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-14T08:54:10 IST" name="Suite" finished-at="2022-10-14T08:57:19 IST" duration-ms="188719">
+  <suite started-at="2023-07-03T21:03:37 IST" name="Suite" finished-at="2023-07-03T21:03:59 IST" duration-ms="22035">
     <groups>
     </groups>
-    <test started-at="2022-10-14T08:54:10 IST" name="ChromeTest" finished-at="2022-10-14T08:55:08 IST" duration-ms="57758">
+    <test started-at="2023-07-03T21:03:37 IST" name="ChromeTest" finished-at="2023-07-03T21:03:59 IST" duration-ms="22035">
       <class name="tests.VerifyContactsPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:54:13 IST" name="openBrowser" finished-at="2022-10-14T08:54:15 IST" duration-ms="1797" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:43 IST" name="openBrowser" finished-at="2023-07-03T21:03:44 IST" duration-ms="1385" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,47 +18,42 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMClassObjects()[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:54:15 IST" name="createPOMClassObjects" finished-at="2022-10-14T08:54:15 IST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="createPOMClassObjects()[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:44 IST" name="createPOMClassObjects" finished-at="2023-07-03T21:03:44 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMClassObjects -->
-        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:54:15 IST" name="openMyNetworkPage" finished-at="2022-10-14T08:54:43 IST" duration-ms="28332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openMyNetworkPage -->
-        <test-method signature="verifyContactsLink()[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:54:43 IST" name="verifyContactsLink" finished-at="2022-10-14T08:54:48 IST" duration-ms="5134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactsLink -->
-        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:54:48 IST" name="logOutToApp" finished-at="2022-10-14T08:54:50 IST" duration-ms="2231" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyContactsLink status=SUCCESS method=VerifyContactsPage.verifyContactsLink()[pri:0, instance:tests.VerifyContactsPage@5c5eefef] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutToApp -->
-        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:54:50 IST" name="openMyNetworkPage" finished-at="2022-10-14T08:55:02 IST" duration-ms="11988" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openMyNetworkPage -->
-        <test-method signature="verifyEventsLink()[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:55:02 IST" name="verifyEventsLink" finished-at="2022-10-14T08:55:05 IST" duration-ms="2160" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:44 IST" name="openMyNetworkPage" finished-at="2023-07-03T21:03:59 IST" duration-ms="14146" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Cannot locate an element using xpath=//span[text()='My Network']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at tests.VerifyContactsPage.verifyEventsLink(VerifyContactsPage.java:107)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[text()='My Network']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pages.HomePage.openMyNetworkPage(HomePage.java:47)
+at tests.VerifyContactsPage.openMyNetworkPage(VerifyContactsPage.java:85)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -70,28 +65,123 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEventsLink -->
-        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:55:05 IST" name="logOutToApp" finished-at="2022-10-14T08:55:07 IST" duration-ms="2406" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyEventsLink status=FAILURE method=VerifyContactsPage.verifyEventsLink()[pri:0, instance:tests.VerifyContactsPage@5c5eefef] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- openMyNetworkPage -->
+        <test-method signature="verifyContactsLink()[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:59 IST" name="verifyContactsLink" finished-at="2023-07-03T21:03:59 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//span[text()='My Network']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[text()='My Network']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pages.HomePage.openMyNetworkPage(HomePage.java:47)
+at tests.VerifyContactsPage.openMyNetworkPage(VerifyContactsPage.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsLink -->
+        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:59 IST" name="logOutToApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398439136" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutToApp -->
-        <test-method signature="verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:55:07 IST" name="verifyHashtagLink" finished-at="2022-10-14T08:55:07 IST" depends-on-methods="tests.VerifyContactsPage.verifyEventsLink" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:59 IST" name="openMyNetworkPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398439137" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMyNetworkPage -->
+        <test-method signature="verifyEventsLink()[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:59 IST" name="verifyEventsLink" finished-at="2023-07-03T21:03:59 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Method VerifyContactsPage.verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@5c5eefef] depends on not successfully finished methods]]>
+              <![CDATA[Cannot locate an element using xpath=//span[text()='My Network']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method VerifyContactsPage.verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@5c5eefef] depends on not successfully finished methods
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[text()='My Network']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pages.HomePage.openMyNetworkPage(HomePage.java:47)
+at tests.VerifyContactsPage.openMyNetworkPage(VerifyContactsPage.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEventsLink -->
+        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:59 IST" name="logOutToApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398439142" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutToApp -->
+        <test-method signature="verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:59 IST" name="verifyHashtagLink" finished-at="2023-07-03T21:03:59 IST" depends-on-methods="tests.VerifyContactsPage.verifyEventsLink" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method VerifyContactsPage.verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@57a3af25] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method VerifyContactsPage.verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@57a3af25] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -104,17 +194,17 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHashtagLink -->
-        <test-method is-config="true" signature="clearPOMClassObjects()[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:55:07 IST" name="clearPOMClassObjects" finished-at="2022-10-14T08:55:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="clearPOMClassObjects()[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:59 IST" name="clearPOMClassObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398439148" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearPOMClassObjects -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.VerifyContactsPage@5c5eefef]" started-at="2022-10-14T08:55:07 IST" name="closeBrowser" finished-at="2022-10-14T08:55:08 IST" duration-ms="387" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.VerifyContactsPage@57a3af25]" started-at="2023-07-03T21:03:59 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398439158" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.VerifyContactsPage -->
       <class name="tests.VerifyConnectionPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:54:10 IST" name="openBrowser" finished-at="2022-10-14T08:54:13 IST" duration-ms="2778" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:37 IST" name="openBrowser" finished-at="2023-07-03T21:03:43 IST" duration-ms="6343" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,524 +215,223 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMClassObjects()[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:54:15 IST" name="createPOMClassObjects" finished-at="2022-10-14T08:54:15 IST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="createPOMClassObjects()[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:44 IST" name="createPOMClassObjects" finished-at="2023-07-03T21:03:44 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMClassObjects -->
-        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:54:15 IST" name="openMyNetworkPage" finished-at="2022-10-14T08:54:37 IST" duration-ms="21924" status="PASS">
+        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:44 IST" name="openMyNetworkPage" finished-at="2023-07-03T21:03:56 IST" duration-ms="11914" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='session_key']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:54881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c0b4c133ba8eecad94143fd79bff84d7
+*** Element info: {Using=xpath, value=//input[@id='session_key']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='session_key']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:54881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c0b4c133ba8eecad94143fd79bff84d7
+*** Element info: {Using=xpath, value=//input[@id='session_key']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at pages.LoginPage.completeLogin(LoginPage.java:38)
+at tests.VerifyConnectionPage.openMyNetworkPage(VerifyConnectionPage.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyNetworkPage -->
-        <test-method signature="verifyConnectionsLink()[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:54:37 IST" name="verifyConnectionsLink" finished-at="2022-10-14T08:54:39 IST" duration-ms="2620" status="PASS">
+        <test-method signature="verifyConnectionsLink()[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:56 IST" name="verifyConnectionsLink" finished-at="2023-07-03T21:03:56 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='session_key']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:54881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c0b4c133ba8eecad94143fd79bff84d7
+*** Element info: {Using=xpath, value=//input[@id='session_key']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='session_key']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:54881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c0b4c133ba8eecad94143fd79bff84d7
+*** Element info: {Using=xpath, value=//input[@id='session_key']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at pages.LoginPage.completeLogin(LoginPage.java:38)
+at tests.VerifyConnectionPage.openMyNetworkPage(VerifyConnectionPage.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyConnectionsLink -->
-        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:54:39 IST" name="logOutToApp" finished-at="2022-10-14T08:54:41 IST" duration-ms="2204" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyConnectionsLink status=SUCCESS method=VerifyConnectionPage.verifyConnectionsLink()[pri:0, instance:tests.VerifyConnectionPage@79e2c065] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:56 IST" name="logOutToApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398436895" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutToApp -->
-        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:54:41 IST" name="openMyNetworkPage" finished-at="2022-10-14T08:55:01 IST" duration-ms="19237" status="PASS">
+        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:56 IST" name="openMyNetworkPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398436897" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyNetworkPage -->
-        <test-method signature="verifyGroupsLink()[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:55:01 IST" name="verifyGroupsLink" finished-at="2022-10-14T08:55:04 IST" duration-ms="3401" status="PASS">
+        <test-method signature="verifyGroupsLink()[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:56 IST" name="verifyGroupsLink" finished-at="2023-07-03T21:03:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='session_key']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:54881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c0b4c133ba8eecad94143fd79bff84d7
+*** Element info: {Using=xpath, value=//input[@id='session_key']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='session_key']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EII4P66', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:54881}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c0b4c133ba8eecad94143fd79bff84d7
+*** Element info: {Using=xpath, value=//input[@id='session_key']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at pages.LoginPage.completeLogin(LoginPage.java:38)
+at tests.VerifyConnectionPage.openMyNetworkPage(VerifyConnectionPage.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGroupsLink -->
-        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:55:04 IST" name="logOutToApp" finished-at="2022-10-14T08:55:06 IST" duration-ms="2145" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyGroupsLink status=SUCCESS method=VerifyConnectionPage.verifyGroupsLink()[pri:0, instance:tests.VerifyConnectionPage@79e2c065] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:56 IST" name="logOutToApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398436904" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutToApp -->
-        <test-method is-config="true" signature="clearPOMClassObjects()[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:55:06 IST" name="clearPOMClassObjects" finished-at="2022-10-14T08:55:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="clearPOMClassObjects()[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:56 IST" name="clearPOMClassObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398436907" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearPOMClassObjects -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.VerifyConnectionPage@79e2c065]" started-at="2022-10-14T08:55:07 IST" name="closeBrowser" finished-at="2022-10-14T08:55:07 IST" duration-ms="320" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.VerifyConnectionPage@223191a6]" started-at="2023-07-03T21:03:59 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688398439155" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.VerifyConnectionPage -->
     </test> <!-- ChromeTest -->
-    <test started-at="2022-10-14T08:55:08 IST" name="FirefoxTest" finished-at="2022-10-14T08:57:19 IST" duration-ms="130921">
-      <class name="tests.VerifyContactsPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:55:13 IST" name="openBrowser" finished-at="2022-10-14T08:55:19 IST" duration-ms="6626" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMClassObjects()[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:55:19 IST" name="createPOMClassObjects" finished-at="2022-10-14T08:55:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOMClassObjects -->
-        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:55:19 IST" name="openMyNetworkPage" finished-at="2022-10-14T08:57:19 IST" duration-ms="119347" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7452, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c789ef1-241b-46b0-8e53-0af26ac2e8c6
-*** Element info: {Using=xpath, value=//span[text()='My Network']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7452, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c789ef1-241b-46b0-8e53-0af26ac2e8c6
-*** Element info: {Using=xpath, value=//span[text()='My Network']}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at pages.HomePage.openMyNetworkPage(HomePage.java:47)
-at tests.VerifyContactsPage.openMyNetworkPage(VerifyContactsPage.java:85)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openMyNetworkPage -->
-        <test-method signature="verifyContactsLink()[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:57:19 IST" name="verifyContactsLink" finished-at="2022-10-14T08:57:19 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7452, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c789ef1-241b-46b0-8e53-0af26ac2e8c6
-*** Element info: {Using=xpath, value=//span[text()='My Network']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7452, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c789ef1-241b-46b0-8e53-0af26ac2e8c6
-*** Element info: {Using=xpath, value=//span[text()='My Network']}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at pages.HomePage.openMyNetworkPage(HomePage.java:47)
-at tests.VerifyContactsPage.openMyNetworkPage(VerifyContactsPage.java:85)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactsLink -->
-        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:57:19 IST" name="logOutToApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665718039152" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutToApp -->
-        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:57:19 IST" name="openMyNetworkPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665718039156" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openMyNetworkPage -->
-        <test-method signature="verifyEventsLink()[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:57:19 IST" name="verifyEventsLink" finished-at="2022-10-14T08:57:19 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7452, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c789ef1-241b-46b0-8e53-0af26ac2e8c6
-*** Element info: {Using=xpath, value=//span[text()='My Network']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7452, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c789ef1-241b-46b0-8e53-0af26ac2e8c6
-*** Element info: {Using=xpath, value=//span[text()='My Network']}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at pages.HomePage.openMyNetworkPage(HomePage.java:47)
-at tests.VerifyContactsPage.openMyNetworkPage(VerifyContactsPage.java:85)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEventsLink -->
-        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:57:19 IST" name="logOutToApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665718039161" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutToApp -->
-        <test-method signature="verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:57:19 IST" name="verifyHashtagLink" finished-at="2022-10-14T08:57:19 IST" depends-on-methods="tests.VerifyContactsPage.verifyEventsLink" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method VerifyContactsPage.verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@128d2484] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method VerifyContactsPage.verifyHashtagLink()[pri:0, instance:tests.VerifyContactsPage@128d2484] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHashtagLink -->
-        <test-method is-config="true" signature="clearPOMClassObjects()[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:57:19 IST" name="clearPOMClassObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665718039165" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearPOMClassObjects -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.VerifyContactsPage@128d2484]" started-at="2022-10-14T08:57:19 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665718039171" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.VerifyContactsPage -->
-      <class name="tests.VerifyConnectionPage">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:08 IST" name="openBrowser" finished-at="2022-10-14T08:55:13 IST" duration-ms="4895" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="createPOMClassObjects()[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:19 IST" name="createPOMClassObjects" finished-at="2022-10-14T08:55:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOMClassObjects -->
-        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:19 IST" name="openMyNetworkPage" finished-at="2022-10-14T08:55:49 IST" duration-ms="29913" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8064, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b6917eaa-1384-43c3-b550-ac8a7027d009
-*** Element info: {Using=xpath, value=//span[text()='My Network']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8064, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b6917eaa-1384-43c3-b550-ac8a7027d009
-*** Element info: {Using=xpath, value=//span[text()='My Network']}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at pages.HomePage.openMyNetworkPage(HomePage.java:47)
-at tests.VerifyConnectionPage.openMyNetworkPage(VerifyConnectionPage.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openMyNetworkPage -->
-        <test-method signature="verifyConnectionsLink()[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:49 IST" name="verifyConnectionsLink" finished-at="2022-10-14T08:55:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8064, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b6917eaa-1384-43c3-b550-ac8a7027d009
-*** Element info: {Using=xpath, value=//span[text()='My Network']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8064, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b6917eaa-1384-43c3-b550-ac8a7027d009
-*** Element info: {Using=xpath, value=//span[text()='My Network']}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at pages.HomePage.openMyNetworkPage(HomePage.java:47)
-at tests.VerifyConnectionPage.openMyNetworkPage(VerifyConnectionPage.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyConnectionsLink -->
-        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:49 IST" name="logOutToApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665717949706" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutToApp -->
-        <test-method is-config="true" signature="openMyNetworkPage()[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:49 IST" name="openMyNetworkPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665717949708" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openMyNetworkPage -->
-        <test-method signature="verifyGroupsLink()[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:49 IST" name="verifyGroupsLink" finished-at="2022-10-14T08:55:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8064, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b6917eaa-1384-43c3-b550-ac8a7027d009
-*** Element info: {Using=xpath, value=//span[text()='My Network']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='My Network']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EII4P66', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8064, moz:profile: C:\Users\ABC\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b6917eaa-1384-43c3-b550-ac8a7027d009
-*** Element info: {Using=xpath, value=//span[text()='My Network']}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at pages.HomePage.openMyNetworkPage(HomePage.java:47)
-at tests.VerifyConnectionPage.openMyNetworkPage(VerifyConnectionPage.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGroupsLink -->
-        <test-method is-config="true" signature="logOutToApp(org.testng.ITestResult)[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:49 IST" name="logOutToApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665717949713" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutToApp -->
-        <test-method is-config="true" signature="clearPOMClassObjects()[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:55:49 IST" name="clearPOMClassObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665717949714" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearPOMClassObjects -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.VerifyConnectionPage@7cc0cdad]" started-at="2022-10-14T08:57:19 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665718039167" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.VerifyConnectionPage -->
-    </test> <!-- FirefoxTest -->
   </suite> <!-- Suite -->
 </testng-results>

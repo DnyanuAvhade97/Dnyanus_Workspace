@@ -54,4 +54,24 @@ public class Utility {
 		}
 		return value;
 	}
+	
+	public static String fetchFractionDataFromExcel(String sheetName, int rowName, int cellName)
+			throws EncryptedDocumentException, IOException {
+
+		FileInputStream file = new FileInputStream("src\\test\\resources\\Testdata\\Practice.xlsx");
+		Workbook wb = WorkbookFactory.create(file);
+		Sheet sheet1 = wb.getSheet(sheetName);
+		Row row = sheet1.getRow(rowName);
+		Cell cell = row.getCell(cellName);
+		String value;
+		try {
+			value = cell.getStringCellValue();
+		}
+		catch (IllegalStateException e) 
+		{
+				double numvalue = cell.getNumericCellValue();
+				value = Double.toString(numvalue);
+		}
+		return value;
+	}
 }

@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.VerifyEventsPage">
+      <class name="tests.Login">
         <methods>
-          <include name="clearPOMClassObjects"/>
-          <include name="logOutToApp"/>
-          <include name="verifyEventsLink"/>
+          <include name="verifyPagesLink"/>
           <include name="openMyNetworkPage"/>
-          <include name="createPOMClassObjects"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
+          <include name="logOutToApp"/>
         </methods>
-      </class> <!-- tests.VerifyEventsPage -->
+      </class> <!-- tests.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
