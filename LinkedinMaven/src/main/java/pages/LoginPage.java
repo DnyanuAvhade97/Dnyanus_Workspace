@@ -8,9 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
 	@FindBy(xpath = "//input[@id='session_key']")
+//	@FindBy(xpath ="//input[@id='email-or-phone']")
 	private WebElement email;
 
 	@FindBy(xpath = "//input[@id='session_password']")
+//	@FindBy(xpath = "//input[@id='password']")
 	private WebElement password;
 
 	@FindBy(xpath = "//button[@type='submit']")
